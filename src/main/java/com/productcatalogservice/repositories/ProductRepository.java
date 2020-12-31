@@ -10,6 +10,4 @@ public interface ProductRepository extends MongoRepository<Product, Integer> {
 	@Query(value = "{'name' : ?0}")
 	Product findByName(String name);
 	
-	@Query(value = "{'name' : ?0}")
-	Product deleteByName(String name);
 }

@@ -4,10 +4,13 @@ import java.util.List;
 
 import com.productcatalogservice.data.Product;
 import com.productcatalogservice.model.ProductRequest;
+import com.warehouse.inventorymanagement.model.ProductMessage;
 
 public interface ProductService {
 
 	List<Product> listProducts();
 
-	boolean removeProduct(ProductRequest productName);
+	boolean sellProduct(ProductRequest productName);
+	
+	boolean updateProducts(List<ProductMessage> messages);
 }
