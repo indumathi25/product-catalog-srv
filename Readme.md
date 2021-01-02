@@ -6,22 +6,31 @@ This micro-service is useful just to display the catalog for products
 Package structures:
 ---
 1. src/main/java:
+
      com.productcatalogservice.api.controller:
        This package for all api level cobtrollers present
+       
      com.productcatalogservice.messaging.controller:
        This package is for all kafka messaging consumer controllers.
+       
      com.productcatalogservice.data:
        This package contains all the data model for databases
+       
      com.productcatalogservice.model:
        This package contains all the API request model
+       
      com.productcatalogservice.repositories:
        This package contains all the database repo to save the data
+       
      com.productcatalogservice.service:   
        This package contains all the service level/business logic level interfaces
+       
      com.productcatalogservice.service.impl:     
         This package contains all the service level implementation
+        
      com.productcatalogservice.utils:
-        This package contains all the helper utils, Kindly note that this one has to be moved to common        libs to reuse this in multiple misroservices
+        This package contains all the helper utils, Kindly note that this one has to be moved to common libs to reuse this in multiple misroservices
+        
       com.warehouse.inventorymanagement.model:
          This package is kept here since kafka connot deserialize the different package other than serialized one, this also has to move to commonlib or schema registry side
          
@@ -92,9 +101,10 @@ Features to improve:
 ---
 Need to add proper error handling
 
-Need to use proper Transaction for Mysql db write and update
 
-Need to create the kubernetes object to make this run in k8s cluster.
+Architectural diagram:
+--
+product-catalog-service/src/main/resources/static/Ikeaassignment-archi.png
 
 
 Note:

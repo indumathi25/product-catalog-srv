@@ -23,7 +23,7 @@ import com.productcatalogservice.service.ProductService;
 import com.warehouse.inventorymanagement.model.Response;
 
 @RestController
-@RequestMapping("/productcatalog/api/v1")
+@RequestMapping("/api/v1")
 public class ProductController {
 
 	@Autowired
