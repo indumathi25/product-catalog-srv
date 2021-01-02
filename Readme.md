@@ -43,7 +43,7 @@ Package structures:
 API's:
 ---
 
-1. curl --location --request GET 'http://localhost:9001/productcatalog/api/v1/listproducts' \
+1. curl --location --request GET 'http://localhost:8082/productcatalog/api/v1/listproducts' \
 --header 'Content-Type: application/json' \
 --form 'file=@"/path/to/file"'
 
@@ -73,7 +73,7 @@ Response Body:
 ```
 
 
-2. curl --location --request PUT 'http://localhost:9001/productcatalog/api/v1/sellproduct' \
+2. curl --location --request PUT 'http://localhost:8082/productcatalog/api/v1/sellproduct' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "name" : "Dining"
