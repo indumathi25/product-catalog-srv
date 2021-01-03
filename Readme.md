@@ -76,7 +76,7 @@ Response Body:
 2. curl --location --request PUT 'http://localhost:8082/productcatalog/api/v1/sellproduct' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "name" : "Dining"
+    "name" : "Dining Chair"
 }'
 
 Description:
